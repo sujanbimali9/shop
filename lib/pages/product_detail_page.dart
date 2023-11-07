@@ -18,7 +18,7 @@ class _ProductDetailState extends State<ProductDetail> {
   int selectSize = 0;
   void onTap() {
     if (selectSize != 0) {
-      context.watch<CartProvider>().addproducts({
+      context.read<CartProvider>().addproducts({
         'id': widget.product['id'],
         'title': widget.product['title'],
         'price': widget.product['price'],
